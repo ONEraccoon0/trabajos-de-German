@@ -1,2 +1,0 @@
-# trabajos-de-German
-trabajos
