@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido - omegaUp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #1d3557;
+            color: rgb(0, 0, 0);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header div {
+            font-size: 18px;
+        }
+        .main-content {
+            text-align: center;
+            padding: 60px 20px;
+            background: #13468f;
+            opacity: 1;
+            color: white;
+        }
+        .main-content h1 {
+            margin-bottom: 20px;
+        }
+        .main-content p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .main-content button {
+            background-color: #e63946;
+            border: none;
+            color: white;
+            padding: 12px 25px;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .carousel {
+            position: relative;
+            max-width: 300px;
+            margin: 20px auto;
+        }
+        .carousel img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .carousel .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .carousel .prev {
+            left: -30px;
+        }
+        .carousel .next {
+            right: -30px;
+        }
+        .additional-content {
+            margin-top: 50px;
+        }
+        .additional-content img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .additional-content button {
+            background-color: #1d3557;
+        }
+        .coders-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .coder-card {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 250px;
+            text-align: center;
+        }
+        .coder-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .coder-card h3 {
+            color: #1d3557;
+            margin-bottom: 10px;
+        }
+        .coder-card p {
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .coder-card button {
+            background-color: #457b9d;
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        h1
+{
+    background-color: #ffffff;
+    text-align: left;
+    padding: 14px;
+    margin:auto;
+}
+h1 span
+{
+    color: #6081ec;
+}
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>TAREAS</h1>
+</div>
+
+<div class="main-content">
+    <h2>Mejora tus habilidades de programación</h2>
+    <p>segundo parcial php</p>
+    <button  onclick="irACarpetaParcial2()">Tarea 2.1</button>
+    <button  onclick="Parcial2()">Tarea 2.2</button>
+
+    <div class="carousel">
+        <button class="arrow prev" onclick="prevImage()">&#10094;</button>
+        <img id="carousel-image" src="img/php.png" alt="Imagen 1">
+        <button class="arrow next" onclick="nextImage()">&#10095;</button>
+    </div>
+
+</div>
+
+
+<div class="coders-section">
+    <div class="coder-card">
+        <img src="img/leon.jpg" alt="Agnesse">
+        <h3>Coder del Mes para Ellas</h3>
+        <p>Erika Mariana</p>
+        <p>Uriangato, Guanajuato</p>
+        <button>Ver listado completo</button>
+    </div>
+    <div class="coder-card">
+        <img src="img/luffy.jpg" alt="Francisco">
+        <h3>Coder del Mes General</h3>
+        <p>Alfredo Nava Herrera</p>
+        <p>Uriangato, Guanajuato</p>
+        <button>Ver listado completo</button>
+    </div>
+</div>
+
+<div class="coder-card" style="margin: 20px auto; width: 250px;">
+    <h3>Escuela del Mes</h3>
+    <p>Cbtis 217</p>
+    <p>Guanajuato, Mexico</p>
+    <button>Ver listado completo</button>
+</div>
+
+<div class="footer">
+    <p></p>
+</div>
+
+
+</body>
+<script>
+    function irACarpetaParcial2() {
+        window.location.href = 'tarea2.1.php';
+    }
+    function Parcial2() {
+        window.location.href = 'tarea2.2.php';
+    }
+</script>
+</html>
